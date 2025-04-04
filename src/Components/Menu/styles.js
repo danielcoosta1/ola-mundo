@@ -22,9 +22,15 @@ const ListaItem = styled.li`
     font-weight: 600;
     text-decoration: none; /* Padrão sem sublinhado */
     position: relative;
+    transition: transform 0.3s ease;
 
+    &:hover {
+      transform: translateY(-2px);
+    }
     /* Sublinhado apenas quando ativo */
-    ${({ $ativo }) => $ativo && `
+    ${({ $ativo }) =>
+      $ativo &&
+      `
       &::after {
         content: '';
         position: absolute;
