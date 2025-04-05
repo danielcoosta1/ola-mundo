@@ -18,12 +18,17 @@ const Lista = styled.ul`
 const ListaItem = styled.li`
   a {
     color: #041833;
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: 600;
     text-decoration: none; /* Padrão sem sublinhado */
     position: relative;
     transition: transform 0.3s ease;
-
+    @media screen and (max-width: 768px) {
+      font-size: 1.5rem; /* Ajuste para telas menores */
+    }
+    @media screen and (max-width: 480px) {
+      font-size: 1rem; /* Ajuste para telas ainda menores */
+    }
     &:hover {
       transform: translateY(-2px);
     }
