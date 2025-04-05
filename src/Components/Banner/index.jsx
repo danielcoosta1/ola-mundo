@@ -2,10 +2,12 @@ import {
   BannerContainer,
   ConteinerDescricao,
   ConteinerImg,
-  Img,
+  ImgPrincipal,
+  ImgSobreposta
 } from "./styles";
 
 import circuloColorido from "../../assets/video-2.3/assets/circulo_colorido.png";
+import minhaFoto from "../../assets/video-2.3/assets/minha_foto.png";
 
 const Banner = () => {
   return (
@@ -19,7 +21,8 @@ const Banner = () => {
         </p>
       </ConteinerDescricao>
       <ConteinerImg>
-        <Img src={circuloColorido} className="circulo-colorido" />
+        <ImgPrincipal src={circuloColorido}  />
+        <ImgSobreposta src={minhaFoto}  />
       </ConteinerImg>
     </BannerContainer>
   );

@@ -57,21 +57,42 @@ const ConteinerDescricao = styled.div`
 `;
 
 const ConteinerImg = styled.div`
-  width: 40%;
+  max-width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   @media screen and (max-width: 768px) {
-    width: 50%;
+    max-width: 30%;
   }
 
   @media screen and (max-width: 480px) {
-    width: 70%;
+    max-width: 40%;
   }
 `;
 
-const Img = styled.img`
-max-width: 70%;
+const ImgPrincipal = styled.img`
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 `;
 
-export { BannerContainer, ConteinerDescricao, ConteinerImg, Img };
+const ImgSobreposta = styled.img`
+  position: absolute;
+  right: -20px;
+  bottom: -20px;
+  width: 50%;
+
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+`;
+
+export {
+  BannerContainer,
+  ConteinerDescricao,
+  ConteinerImg,
+  ImgPrincipal,
+  ImgSobreposta,
+};
