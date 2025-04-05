@@ -67,7 +67,7 @@ const ConteinerImg = styled.div`
     max-width: 30%;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and             (max-width: 480px) {
     max-width: 40%;
   }
 `;
