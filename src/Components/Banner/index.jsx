@@ -5,8 +5,7 @@ import {
   Img,
 } from "./styles";
 
-import circuloColorido from "../../assets/circulo-colorido.png";
-import minhaFoto from "../../assets/minha-foto.png";
+import circuloColorido from "../../assets/video-2.3/assets/circulo_colorido.png";
 
 const Banner = () => {
   return (
@@ -20,8 +19,7 @@ const Banner = () => {
         </p>
       </ConteinerDescricao>
       <ConteinerImg>
-        <Img />
-        <Img />
+        <Img src={circuloColorido} className="circulo-colorido" />
       </ConteinerImg>
     </BannerContainer>
   );

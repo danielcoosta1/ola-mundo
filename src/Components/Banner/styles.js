@@ -3,10 +3,18 @@ import styled from "styled-components";
 const BannerContainer = styled.section`
   width: 100vw;
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
-  padding: 3rem;
+  padding: 3rem 10rem;
   background-color: #041833;
+  min-height:40vh;
+  
+  @media screen and (max-width: 768px) {
+    min-height: 20vh;
+    padding: 3rem 2rem;
+    gap: 2rem;
+  }
+
 `;
 
 const ConteinerDescricao = styled.div`
@@ -15,27 +23,28 @@ const ConteinerDescricao = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  min-height: 20rem;
+
 
   h1 {
-    font-size: 2rem;
+    font-size: 5rem;
     font-weight: 700;
   }
 
   p {
-    font-size: 1.2rem;
+    font-size:1.5rem;
     font-weight: 400;
-    line-height: 1.5rem;
-    width: 70%;
+
+    
   }
 
   @media screen and (max-width: 768px) {
+    
     h1 {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
 
     p {
-      font-size: 1rem;
+      font-size: .75rem;
       width: 100%;
     }   
     
@@ -53,8 +62,25 @@ const ConteinerDescricao = styled.div`
   }
 `;
 
-const ConteinerImg = styled.div``;
+const ConteinerImg = styled.div`
+width: 30%;
+display: flex;
+justify-content: center;
+align-items: center;
+@media screen and (max-width: 768px) {
+    width: 50%;
+  }
 
-const Img = styled.img``;
+  @media screen and (max-width: 480px) {
+    width: 70%;
+  } 
+`;
+    
+const Img = styled.img`
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+   
+`;
 
 export { BannerContainer, ConteinerDescricao, ConteinerImg, Img };
