@@ -19,12 +19,13 @@ const BannerContainer = styled.section`
 const ConteinerDescricao = styled.div`
   color: #fff;
   width: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 
   h1 {
-    font-size: 6rem;
+    font-size:5rem;
     font-weight: 700;
   }
 
