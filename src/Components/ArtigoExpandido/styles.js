@@ -1,17 +1,21 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 const ArtigoContainer = styled.article`
   max-width: 100rem;
   margin: 0 auto;
   padding: 2rem 1.5rem;
   color: #333;
   line-height: 1.7;
-  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-family: "Segoe UI", system-ui, sans-serif;
   text-align: justify;
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     color: #444444;
     margin: 2rem 0 1rem;
     line-height: 1.3;
+    font-size: 2.5rem;
   }
 
   h2 {
@@ -22,15 +26,30 @@ const ArtigoContainer = styled.article`
 
   p {
     margin: 1.5rem 0;
+    font-size: 1.5rem;
   }
 
-  ul, ol {
+  ul,
+  ol {
     padding-left: 2rem;
     margin: 1.5rem 0;
-    
+
     li {
       margin: 0.5rem 0;
     }
+  }
+
+  @media screen and (max-width: 768px) {
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-size: 1.5rem;
+    }
+    
+  p {
+  font-size: 1rem;
+  }
   }
 
   blockquote {
@@ -52,12 +71,12 @@ const ArtigoContainer = styled.article`
   }
 
   code {
-    font-family: 'Fira Code', monospace;
+    font-family: "Fira Code", monospace;
     font-size: 0.9em;
   }
 `;
 
- const LinkEstilizado = styled.a`
+const LinkEstilizado = styled.a`
   color: #4299e1;
   text-decoration: none;
   font-weight: 500;
@@ -77,7 +96,7 @@ const FigureEstilizado = styled.figure`
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
 
   figcaption {
@@ -89,6 +108,4 @@ const FigureEstilizado = styled.figure`
 
 const ArtigoTitulo = styled.h1``;
 
-
-
-export {ArtigoContainer, LinkEstilizado, FigureEstilizado, ArtigoTitulo}
+export { ArtigoContainer, LinkEstilizado, FigureEstilizado, ArtigoTitulo };
