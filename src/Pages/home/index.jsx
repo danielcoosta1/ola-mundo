@@ -9,7 +9,7 @@ import { ConteinerCards, CardsGrid } from "./styles";
 
 
 
-import articles from "../../assets/video-3.1/json/posts.json";
+import articles from "../../assets/json/posts.json"
 const Home = () => {
     const [artigoSelecionado, setArtigoSelecionado] = useState(null);
     const [outrosArtigos, setOutrosArtigos] = useState([]);
@@ -34,7 +34,9 @@ const Home = () => {
         ) : (
           <>
             <ArtigoExpandido artigo={artigoSelecionado} />
+            <h2>Outros artigos:</h2>
             <CardsGrid>
+              
               {outrosArtigos.map((artigo) => (
                 <Card
                   key={artigo.id}
