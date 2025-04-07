@@ -1,11 +1,12 @@
 import { CardContainer, CardImagem, CardContent, CardButton } from "./styles";
 
 const Card = ({ artigo, onClick }) => {
+
+  const imagemPath = require(`../../assets/posts/${artigo.id}/capa.png`);
   return (
     <CardContainer onClick={() => onClick(artigo.id)}>
       <CardImagem
-        src={`/assets/video-3.1/posts/${artigo.id}/capa.png`}
-        alt={artigo.titulo}
+        $bgImage={imagemPath}
       />
       <CardContent>
         <h3>{artigo.titulo}</h3>
