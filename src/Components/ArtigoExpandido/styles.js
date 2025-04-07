@@ -46,10 +46,10 @@ const ArtigoContainer = styled.article`
     h4 {
       font-size: 1.5rem;
     }
-    
-  p {
-  font-size: 1rem;
-  }
+
+    p {
+      font-size: 1rem;
+    }
   }
 
   blockquote {
@@ -105,7 +105,25 @@ const FigureEstilizado = styled.figure`
     margin-top: 0.5rem;
   }
 `;
+const ConteinerTitulo = styled.div`
+  width: 100%;
 
-const ArtigoTitulo = styled.h1``;
+  
+  background-image: url(${(props) => props.$bgImg});
 
-export { ArtigoContainer, LinkEstilizado, FigureEstilizado, ArtigoTitulo };
+  background-size: cover;
+  background-position: center;
+`;
+const ArtigoTitulo = styled.h1`
+
+padding: 1.5rem 2rem;
+background: rgba(255, 255, 255, 0.85);
+`;
+
+export {
+  ArtigoContainer,
+  LinkEstilizado,
+  FigureEstilizado,
+  ConteinerTitulo,
+  ArtigoTitulo,
+};

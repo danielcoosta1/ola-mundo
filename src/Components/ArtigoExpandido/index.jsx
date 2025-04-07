@@ -1,10 +1,19 @@
-import { ArtigoContainer, LinkEstilizado, FigureEstilizado, ArtigoTitulo } from "./styles";
+import {
+  ArtigoContainer,
+  LinkEstilizado,
+  FigureEstilizado,
+  ArtigoTitulo,
+  ConteinerTitulo
+} from "./styles";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeHighlight from "rehype-highlight";
 import "highlight.js/styles/atom-one-dark.css";
 
 const ArtigoExpandido = ({ artigo }) => {
+ 
+  const imagemPath = require(`../../assets/posts/${artigo.id}/capa.png`);
+
   const transformImageUri = (uri) => {
     if (uri.startsWith("/assets/posts/")) {
       const imageName = uri.split("/").pop();
@@ -15,7 +24,12 @@ const ArtigoExpandido = ({ artigo }) => {
 
   return (
     <ArtigoContainer>
-      <ArtigoTitulo>{artigo.titulo}</ArtigoTitulo>
+
+      <ConteinerTitulo
+      $bgImg = {imagemPath}
+      >
+        <ArtigoTitulo>{artigo.titulo}</ArtigoTitulo>
+      </ConteinerTitulo>
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         rehypePlugins={[rehypeHighlight]}
