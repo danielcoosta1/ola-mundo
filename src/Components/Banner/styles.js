@@ -2,9 +2,9 @@ import styled from "styled-components";
 const BannerContainer = styled.section`
   width: 100vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 3rem 10rem;
+  margin: 0 auto;
   background-color: #041833;
   min-height: 50vh;
   max-height: 50vh;
@@ -14,6 +14,14 @@ const BannerContainer = styled.section`
     padding: 3rem 2rem;
     gap: 2rem;
   }
+`;
+
+const Conteiner = styled.div`
+display: flex;
+max-width: 100rem;
+justify-content: space-between;
+align-items: center;
+
 `;
 
 const ConteinerDescricao = styled.div`
@@ -97,4 +105,5 @@ export {
   ConteinerImg,
   ImgPrincipal,
   ImgSobreposta,
+  Conteiner
 };
