@@ -35,12 +35,13 @@ const ConteinerDescricao = styled.div`
   }
 
   @media screen and (max-width: 768px) {
+    width: 70%;
     h1 {
       font-size: 2rem;
     }
 
     p {
-      font-size: 0.75rem;
+      font-size:1rem;
       width: 100%;
     }
   }

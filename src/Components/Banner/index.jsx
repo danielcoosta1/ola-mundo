@@ -6,8 +6,8 @@ import {
   ImgSobreposta
 } from "./styles";
 
-import circuloColorido from "../../assets/video-2.3/assets/circulo_colorido.png";
-import minhaFoto from "../../assets/video-2.3/assets/minha_foto.png";
+import circuloColorido from "../../assets/circulo_colorido.png"
+import minhaFoto from "../../assets/minha_foto.png";
 
 const Banner = () => {
   return (
