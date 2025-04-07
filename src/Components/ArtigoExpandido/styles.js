@@ -107,6 +107,7 @@ const FigureEstilizado = styled.figure`
 `;
 const ConteinerTitulo = styled.div`
   width: 100%;
+  position: relative;
 
   
   background-image: url(${(props) => props.$bgImg});
@@ -120,10 +121,38 @@ padding: 1.5rem 2rem;
 background: rgba(255, 255, 255, 0.85);
 `;
 
+const BotaoFechar = styled.button`
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background: transparent;
+  color:black;
+  
+  font-size:4rem;
+  width: 80px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    
+    transform: scale(1.1);
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 2.5rem;
+
+  
+    
+  }
+`;
+
 export {
   ArtigoContainer,
   LinkEstilizado,
   FigureEstilizado,
   ConteinerTitulo,
   ArtigoTitulo,
+  BotaoFechar
 };

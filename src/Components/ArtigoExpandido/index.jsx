@@ -3,17 +3,18 @@ import {
   LinkEstilizado,
   FigureEstilizado,
   ArtigoTitulo,
-  ConteinerTitulo
+  ConteinerTitulo,
+  BotaoFechar,
 } from "./styles";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeHighlight from "rehype-highlight";
 import "highlight.js/styles/atom-one-dark.css";
+import { useNavigate } from "react-router-dom";
 
-const ArtigoExpandido = ({ artigo }) => {
- 
+const ArtigoExpandido = ({ artigo, onClose }) => {
   const imagemPath = require(`../../assets/posts/${artigo.id}/capa.png`);
-
+  const navigate = useNavigate();
   const transformImageUri = (uri) => {
     if (uri.startsWith("/assets/posts/")) {
       const imageName = uri.split("/").pop();
@@ -22,12 +23,18 @@ const ArtigoExpandido = ({ artigo }) => {
     return uri;
   };
 
+  const handleClose = () => {
+    if (onClose) {
+      onClose();
+    } else {
+      navigate("/");
+    }
+  };
+
   return (
     <ArtigoContainer>
-
-      <ConteinerTitulo
-      $bgImg = {imagemPath}
-      >
+      <ConteinerTitulo $bgImg={imagemPath}>
+        <BotaoFechar onClick={handleClose}>&times;</BotaoFechar>
         <ArtigoTitulo>{artigo.titulo}</ArtigoTitulo>
       </ConteinerTitulo>
       <ReactMarkdown

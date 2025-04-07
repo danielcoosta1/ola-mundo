@@ -6,9 +6,6 @@ import { useState } from "react";
 
 import { ConteinerCards, CardsGrid } from "./styles";
 
-
-
-
 import articles from "../../assets/json/posts.json"
 const Home = () => {
     const [artigoSelecionado, setArtigoSelecionado] = useState(null);
@@ -33,7 +30,7 @@ const Home = () => {
           </CardsGrid>
         ) : (
           <>
-            <ArtigoExpandido artigo={artigoSelecionado} />
+            <ArtigoExpandido artigo={artigoSelecionado} onClose={()=> setArtigoSelecionado(null)} />
             <h2>Outros artigos:</h2>
             <CardsGrid>
               
