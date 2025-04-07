@@ -25,9 +25,9 @@ const ArtigoExpandido = ({ artigo, onClose }) => {
 
   const handleClose = () => {
     if (onClose) {
-      onClose();
+      onClose(); // Limpa o estado na Home
     } else {
-      navigate("/");
+      navigate(-1); // Volta para página anterior se veio de rota direta
     }
   };
 
