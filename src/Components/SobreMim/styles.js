@@ -20,10 +20,18 @@ const ConteinerTitulo = styled.div`
     font-size: 2.5rem;
     padding: 2rem 3rem;
     background: rgba(255, 255, 255, 0.85);
+  }
 
-    @media screen and (max-width: 768px) {
-      padding: 1.5 2rem;
+  @media screen and (max-width: 768px) {
+    h1 {
+      padding: 1.5rem 2rem;
       font-size: 2rem;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    h1 {
+      font-size: 1.5rem;
     }
   }
 `;
@@ -40,6 +48,15 @@ const ConteinerDescricao = styled.section`
     h2 {
       font-size: 1.5rem;
       margin: 2rem 0;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    padding: 0 2rem;
+
+    h2 {
+      font-size: 1rem;
+      margin: 1rem 0;
     }
   }
 `;
@@ -69,17 +86,27 @@ const Paragrafo = styled.div`
     flex-direction: column;
     gap: 5rem;
 
-
-
     p {
       font-size: 1rem;
       width: 100%;
       order: 1;
     }
   }
+
+  @media screen and (max-width: 420px) {
+    gap: 2.5rem;
+    line-height: 25px;
+  }
 `;
 
-const Img = styled.img``;
+const Img = styled.img`
+
+  @media screen and (max-width: 420px) {
+    max-height: 15rem;
+    margin-top: 2rem;
+  }
+
+`;
 
 export {
   Main,
