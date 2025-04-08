@@ -11,7 +11,8 @@ const ConteinerCards = styled.section`
   }
 
   @media screen and (max-width: 480px) {
-    margin: -5rem auto 0 auto;
+    max-width: 15rem;
+    margin: -2rem auto 0 auto;
     padding: 0.5rem;
   }
 `;
@@ -27,7 +28,7 @@ const CardsGrid = styled.div`
     gap: 1rem
   }
   @media screen and (max-width: 480px) {
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 0.5rem;
   }
 `;

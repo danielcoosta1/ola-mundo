@@ -7,6 +7,7 @@ const CardContainer = styled.div`
   overflow: hidden;
   transition: transform 0.3s ease;
   
+  
 
   &:hover {
     transform: translateY(-5px);
@@ -23,6 +24,8 @@ const CardImagem = styled.div`
   @media screen and (max-width:768px) {
     height: 100px
   }
+
+
 `;
 
 const CardContent = styled.div`
@@ -32,6 +35,9 @@ const CardContent = styled.div`
   align-items: center;
   text-align: center;
   padding: 1.5rem;
+
+
+  
 `;
 const CardButton = styled.button`
   width: 50%;
