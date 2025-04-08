@@ -6,6 +6,7 @@ const CardContainer = styled.div`
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
+  
 
   &:hover {
     transform: translateY(-5px);
@@ -18,6 +19,10 @@ const CardImagem = styled.div`
   background-image: url(${(props) => props.$bgImage});
   background-size: cover;
   background-position: center;
+
+  @media screen and (max-width:768px) {
+    height: 100px
+  }
 `;
 
 const CardContent = styled.div`
