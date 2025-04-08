@@ -4,30 +4,37 @@ const BannerContainer = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
+  
   background-color: #041833;
   min-height: 50vh;
-  
 
   @media screen and (max-width: 768px) {
     min-height: 20vh;
     padding: 2rem 1rem;
     gap: 2rem;
   }
+
+  
 `;
 
 const Conteiner = styled.div`
-display: flex;
+  display: flex;
 
-justify-content: space-between;
-align-items: center;
+  justify-content: space-between;
+  align-items: center;
 
-padding: 0 3rem;
+  padding: 0 3rem;
 
-@media screen and (max-width: 768px) {
-  padding: 0 2rem;
+  @media screen and (max-width: 768px) {
+    padding: 0 2rem;
   }
 
+  @media screen and (max-width: 420px) {
+    
+    flex-direction: column;
+    padding: 0%;
+    gap: 2.5rem;
+  }
 `;
 
 const ConteinerDescricao = styled.div`
@@ -39,7 +46,7 @@ const ConteinerDescricao = styled.div`
   gap: 1rem;
 
   h1 {
-    font-size:5rem;
+    font-size: 5rem;
     font-weight: 700;
   }
 
@@ -55,12 +62,15 @@ const ConteinerDescricao = styled.div`
     }
 
     p {
-      font-size:1rem;
+      font-size: 1rem;
       width: 100%;
     }
   }
 
   @media screen and (max-width: 480px) {
+    width: 80%;
+    
+
     h1 {
       font-size: 1.2rem;
     }
@@ -84,9 +94,9 @@ const ConteinerImg = styled.div`
     margin-right: 0;
   }
 
-  @media screen and             (max-width: 480px) {
-    max-width: 40%;
-    margin-right: 0;
+  @media screen and (max-width: 420px) {
+    max-width: 30%;
+    
   }
 `;
 
@@ -114,5 +124,5 @@ export {
   ConteinerImg,
   ImgPrincipal,
   ImgSobreposta,
-  Conteiner
+  Conteiner,
 };
