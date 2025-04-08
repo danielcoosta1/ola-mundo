@@ -1,7 +1,7 @@
 # Sobre Mim - Portfolio Pessoal
 
-[![Preview do Projeto](https://github.com/danielcoosta1/ola-mundo/blob/develop/src/assets/exemplo1.PNG?raw=true)]
-[![Preview do Projeto](https://github.com/danielcoosta1/ola-mundo/blob/develop/src/assets/exemplo2.PNG?raw=true)]
+![Preview do Projeto](https://github.com/danielcoosta1/ola-mundo/blob/develop/src/assets/exemplo1.PNG?raw=true)
+![Preview do Projeto](https://github.com/danielcoosta1/ola-mundo/blob/develop/src/assets/exemplo2.PNG?raw=true)
 
 Projeto pessoal desenvolvido para apresentar habilidades, experiências e projetos.
 
