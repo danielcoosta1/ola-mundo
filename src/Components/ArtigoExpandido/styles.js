@@ -1,12 +1,13 @@
 import styled from "styled-components";
 const ArtigoContainer = styled.article`
-  max-width: 100rem;
+  max-width: 125rem;
+
   margin: 0 auto;
-  padding: 2rem 1.5rem;
+  padding: 2rem 0;
   color: #333;
   line-height: 1.7;
   font-family: "Segoe UI", system-ui, sans-serif;
-  text-align: justify;
+  text-align: left;
 
   h1,
   h2,
@@ -39,19 +40,6 @@ const ArtigoContainer = styled.article`
     }
   }
 
-  @media screen and (max-width: 768px) {
-    h1,
-    h2,
-    h3,
-    h4 {
-      font-size: 1.5rem;
-    }
-
-    p {
-      font-size: 1rem;
-    }
-  }
-
   blockquote {
     background: #f7fafc;
     border-left: 4px solid #4299e1;
@@ -73,6 +61,46 @@ const ArtigoContainer = styled.article`
   code {
     font-family: "Fira Code", monospace;
     font-size: 0.9em;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 1rem 0.5rem;
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-size: 1.8rem; /* Tamanho maior para melhor legibilidade */
+      margin: 1rem 0;
+    }
+
+    p {
+      font-size: 1.1rem;
+      padding: 0 0.5rem;
+    }
+
+    pre {
+      margin: 1rem -0.5rem; /* Expandir blocos de código */
+      border-radius: 0;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    padding: 1rem 1.rem;
+    width: 100vw;
+    margin-left: -20vw;
+    left: 20%;
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 0.75rem;
+      line-height: 1.5;
+    }
   }
 `;
 
@@ -104,10 +132,20 @@ const FigureEstilizado = styled.figure`
     color: #718096;
     margin-top: 0.5rem;
   }
+
+  @media screen and (max-width: 768px) {
+    margin: 1rem -0.5rem; /* Expandir imagem até as bordas */
+
+    img {
+      border-radius: 0; /* Remove bordas arredondadas */
+    }
+  }
 `;
 const ConteinerTitulo = styled.div`
-  width: 100%;
+  width: 100vw;
   position: relative;
+  margin-left: -50vw;
+  left: 50%;
 
   background-image: url(${(props) => props.$bgImg});
 
@@ -115,20 +153,27 @@ const ConteinerTitulo = styled.div`
   background-position: center;
 `;
 const ArtigoTitulo = styled.h1`
+  width: 100%;
+  box-sizing: border-box;
   padding: 1.5rem 2rem;
   background: rgba(255, 255, 255, 0.85);
+
+  @media screen and (max-width: 768px) {
+    padding: 1rem;
+    font-size: 1.8rem;
+  }
 `;
 
 const BotaoFechar = styled.button`
   position: absolute;
-  top: 10px;
-  right: 20px;
+  top: 15px;
+  right: 10px;
   background: transparent;
   color: black;
 
-  font-size: 4rem;
-  width: 80px;
-  height: 60px;
+  font-size: 3rem;
+  width: 50px;
+  height: 50px;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -138,7 +183,9 @@ const BotaoFechar = styled.button`
   }
 
   @media screen and (max-width: 768px) {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    top: 10px;
+    right: 5px;
   }
 `;
 
