@@ -9,10 +9,14 @@ import {
   Paragrafo2,
 } from "./styles";
 
+import bgImg from "../../assets/sobre_mim_capa.png"
+
 const SobreMim = () => {
   return (
     <Main>
-      <ConteinerTitulo>
+      <ConteinerTitulo
+      $bgImg = {bgImg}
+      >
         <h1>Sobre mim</h1>
       </ConteinerTitulo>
       <ConteinerDescricao>
