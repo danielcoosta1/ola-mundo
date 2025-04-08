@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const ConteinerCards = styled.section`
-  max-width: 100rem;
+
   margin: -5rem auto 0 auto;
   padding: 2rem;
 
@@ -18,8 +18,8 @@ const ConteinerCards = styled.section`
 
 const CardsGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 2rem 8rem;
   margin-top: 2rem;
 
   @media screen and (max-width: 768px) {
