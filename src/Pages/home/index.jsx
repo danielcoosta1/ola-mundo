@@ -13,6 +13,7 @@ const Home = () => {
   const [artigoSelecionado, setArtigoSelecionado] = useState(null);
   const [outrosArtigos, setOutrosArtigos] = useState([]);
   const navigate = useNavigate();
+  
   const handleCardClick = (id) => {
     const artigo = articles.find((artigo) => artigo.id === id);
     setArtigoSelecionado(artigo);
