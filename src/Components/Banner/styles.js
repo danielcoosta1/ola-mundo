@@ -2,25 +2,31 @@ import styled from "styled-components";
 const BannerContainer = styled.section`
   width: 100vw;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin: 0 auto;
   background-color: #041833;
   min-height: 50vh;
-  max-height: 50vh;
+  
 
   @media screen and (max-width: 768px) {
     min-height: 20vh;
-    padding: 3rem 2rem;
+    padding: 2rem 1rem;
     gap: 2rem;
   }
 `;
 
 const Conteiner = styled.div`
 display: flex;
-max-width: 100rem;
+
 justify-content: space-between;
 align-items: center;
+
+padding: 0 3rem;
+
+@media screen and (max-width: 768px) {
+  padding: 0 2rem;
+  }
 
 `;
 
