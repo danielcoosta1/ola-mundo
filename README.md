@@ -1,6 +1,7 @@
 # Sobre Mim - Portfolio Pessoal
 
-Projeto pessoal desenvolvido para estudar mais profundamente o ReactJS.
+Projeto fictício da plataforma alura, com algumas mudanças pessoais que achei pertinente;
+Projeto com foco em aprimorar o uso da biblietaca ReactJS.
 
 ![Preview do Projeto](https://github.com/danielcoosta1/ola-mundo/blob/develop/src/assets/exemplo1.PNG?raw=true)
 ![Preview do Projeto](https://github.com/danielcoosta1/ola-mundo/blob/develop/src/assets/exemplo2readme.PNG?raw=true)
