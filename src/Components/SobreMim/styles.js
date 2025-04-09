@@ -79,10 +79,10 @@ const Paragrafo = styled.div`
 
   p {
     font-size: 1.5rem;
-    width: 60%;
+    
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1420px) {
     flex-direction: column;
     gap: 5rem;
 

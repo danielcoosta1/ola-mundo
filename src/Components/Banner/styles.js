@@ -3,15 +3,15 @@ const BannerContainer = styled.section`
   width: 100vw;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   
   background-color: #041833;
   min-height: 50vh;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1440px) {
     min-height: 20vh;
     padding: 2rem 1rem;
-    gap: 2rem;
+    gap: 3rem;
   }
 
   
@@ -25,7 +25,8 @@ const Conteiner = styled.div`
 
   padding: 0 3rem;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width:1440px) {
+    gap:5rem;
     padding: 0 2rem;
   }
 
@@ -55,10 +56,10 @@ const ConteinerDescricao = styled.div`
     font-weight: 400;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1440px) {
     width: 70%;
     h1 {
-      font-size: 2rem;
+      font-size: 3rem;
     }
 
     p {
@@ -89,7 +90,7 @@ const ConteinerImg = styled.div`
   align-items: center;
   position: relative;
   margin-right: 12rem;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1440px) {
     max-width: 30%;
     margin-right: 0;
   }
